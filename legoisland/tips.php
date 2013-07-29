@@ -1,6 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head><title>LEGO Island on Video Game Flashback</title>
+<head><title>Tips and Tricks for LEGO Island</title>
 <meta charset="utf-8">
 <meta name="description" content="Ever wondered why you can't go into the cave under LEGO Island? Read this interview with Wes Jenkins to learn about the making of the game!">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -199,7 +200,7 @@ $(function() {
 </svg></a></h1>
 	<nav>
 	<ul>
-		<li><a href="/legoisland.html">Home</a></li><li><a href="interview.php">Interview</a></li><li><a href="tips.php">Tips & Tricks</a></li><li><a href="music.php">Music</a></li><li><a href="videos.php">Videos</a></li><li><a href="comic.php">Comic</a></li><li><a href="pictures.php">Pictures</a></li><li><a href="characters.php">Characters</a></li><li><a href="credits.php">Credits</a></li><li><a href="contact.php">Contact</a></li>
+		<li><a href="/legoisland">Home</a></li><li><a href="interview.php">Interview</a></li><li><a href="tips.php">Tips & Tricks</a></li><li><a href="music.php">Music</a></li><li><a href="videos.php">Videos</a></li><li><a href="comic.php">Comic</a></li><li><a href="pictures.php">Pictures</a></li><li><a href="characters.php">Characters</a></li><li><a href="credits.php">Credits</a></li><li><a href="contact.php">Contact</a></li>
 	</ul>
     <!--
     <form id="page-changer" action="" method="post">
@@ -221,8 +222,37 @@ $(function() {
 	</nav>
 </header>
 <article>
-<h1>Welcome to LEGO Island<span>on Video Game Flashback!</span></h1>
-<p>Welcome to the LEGO Island fansite! Visit <a href="interview.php">Interview</a> for a great exclusive interview with Wes, one of the creators of the game! Want to run the game without a CD? Head over to <a href="tips.php">Tips</a>. Also, be sure to check out the <a href="pictures.php">Pictures</a> page for some behind the scenes pictures during the development of the game!</p>
+<h1>Tips and Tricks</h1>
+<h2>Installation on modern Operating Systems</h2>
+<p>Contrary to popular belief, LEGO Island can be played on a number of modern PC's&hellip; the only way to find out really is to test it out for yourself. I've tried it on XP and Windows 7 with very few issues. Some things I've come across are bad click-detection where only one face of a LEGO element becomes clickable when the whole object should be, as well as crashes before the credits screen.</p>
+<h2>No CD Crack</h2>
+<figure><a href="images/no_cd_full.jpg" target="_blank"><img src="images/no_cd.jpg" alt="Whoops! You have to put the CD in your computer!" title="Whoops! You have to put the CD in your computer!" width="232" height="189" class="right"/></a></figure>
+<p>Ok, so it's not exactly &quot;cracking&quot; being done... you just have to change a registry value to make the game think the CD drive is actually a folder in your computer where you've copied the contents of the disk. Follow the steps below at your own risk! <strong>WARNING:</strong> If you've never edited your registry before, be very careful! I will not be held responsible if you cause any problems!</p>
+<ol>
+  <li>Once the game is installed from the disk, check to make sure that the game works on your system.</li>
+  <li> Copy the contents of the CD to anywhere in your computer. For this example, I'm putting them in the same folder as LEGO Island was installed in a subfolder I created called &quot;CD&quot;</li>
+  <li>Open up <strong>regedit.exe</strong>. If you don't know how to do this, open up the Start menu and find <strong>Run...</strong>, choose it, and type in <strong>regedit</strong>.</li>
+  <li>From here,
+    <ol>
+      <li>if you have a 32-bit operating system (or you don't know what you have), try navigating to: <strong>HKEY_LOCAL_MACHINE&gt;SOFTWARE&gt;Mindscape&gt;LEGO Island</strong></li>
+      <li>if you have a 64-bit operating system (or you couldn't find the Mindscape folder in the last point), try navigating to: <strong>HKEY_LOCAL_MACHINE&gt;SOFTWARE&gt;Wow6432Node&gt;Mindscape&gt;LEGO Island</strong></li>
+      <li>if you've tried both of the steps above with no luck, try <strong>Edit&gt;Find</strong> or <strong>CTRL+F</strong> in regedit and look for <strong>Mindscape</strong>. Once you find it, open up the <strong>LEGO Island</strong> folder.</li>
+    </ol>
+  </li>
+  <li>With <strong>LEGO Island</strong> selected, you should see a key called <strong>cdpath</strong>. Double-click on it.</li>
+  <li>Now, all you need to do is link up this path to the path where you copied the CD's contents.
+    <ol>
+      <li>If you have a 32-bit operating system and put the CD folder inside your LEGO Island folder, replace the cdpath's value from it's current drive letter to <strong>C:\PROGRA~1\LEGOIS~1\CD</strong></li>
+      <li>If you have a 64-bit operating system and put the CD folder inside your LEGO Island folder, replace the cdpath's value from it's current drive letter to <strong>C:\PROGRA~2\LEGOIS~1\CD</strong></li>
+    </ol>
+  </li>
+  <li> Tada! No more CD needed!</li>
+</ol>
+<h1>Cheats</h1>
+<p><dl>
+<dt>Dancing plants</dt><dd>Press Z + T during game.</dd>
+<dt>Fly around the island</dt><dd>Tap + and - on the numpad at the same time rapidly while being Pepper and you should be able to float around the island, but you'll eventually snap back to where you were. This only works a few times. Sometimes you'll even see characters flickering in front of you.</dd>
+</dl></p>
 </article>
 
 <footer>This is a fansite, and is not endorsed or owned by The LEGO Group.<br /><br />LEGO and LEGO Island logos, the the Brick and Knob configurations and the Minifigure are trademarks of the LEGO Group.<br /><br />LEGO Island is a game that was created in 1997 by Mindscape and The LEGO Group, and the content on this site is either a direct product of the aforementioned, or opinions and views expressed by those associated with these groups. The views expressed, however, don't necessarily reflect the views of the aforementioned companies. This fansite does not restrict the companies' ability to sell/promote the product and all of the content on this site should be seen as fair-use in a court of law.<br /><br />If anyone knows a lawyer and wants to help me complete this footer, please contact me.</footer>

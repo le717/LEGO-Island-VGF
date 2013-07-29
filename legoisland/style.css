@@ -1,0 +1,72 @@
+body{background:#eee url(bg_noise.jpg); color:#444; font-family:Roboto,Arial,Helvetica,sans-serif; padding:20px; line-height:1.4em; text-shadow:1px 1px 0px #fff;}
+::selection{background:#ccc; text-shadow:none;}
+::-moz-selection{background:#ccc; text-shadow:none;}
+
+header{width:100%; max-width:1000px; margin:0 auto}
+header h1{display:block; width:100%; max-width:1000px; text-align:center; margin:0 0 10px 0;text-shadow:0 1px 0 #fff;}
+
+nav{display:inline-block; width:100%; max-width:1000px; text-align:center;}
+nav ul{list-style-type:none; padding:0; display:inline-block; }
+nav li{display:inline-block;}
+nav li a{display:inline-block; padding:8px 10px; margin:5px 5px; background:rgba(0,0,0,0.05); color:#444; text-shadow:0 1px 0 #eee; text-decoration:none; border:1px solid #ccc; border-radius:5px; box-shadow:0 0 0 #eee; transition:all 0.3s;text-shadow:1px 1px 0px #eee;}
+nav li a:hover, nav li a:active{border:1px solid #ccc; box-shadow:0 0 12px #9df; }
+
+article{width:100%; max-width:1600px; margin:0 auto;}
+article h1,article h2,article h3{display:block; width:100%; max-width:1000px;}
+article h1{margin:1em auto 0.5em; font-size:150%;}
+article h1 span{display:block;font-size:75%;margin-top:0.2em;}
+article h2{margin:0 auto 0.2em; font-size:125%;}
+article p{display:block; width:100%; max-width:1000px; margin:0.2em auto 1.2em auto;}
+article ul{padding:0 0 1.2em 3em;}
+article ol li{padding:0.3em 0;}
+
+#container{width:100%; max-width:1000px; margin:0 auto; position:relative;}
+#container2{width:870px; height:1465px; margin:20px auto; position:relative;}
+
+ul,ol{display:block; width:100%; max-width:1000px; margin:0 auto; box-sizing:border-box;}
+dl{display:block; width:100%; max-width:1000px; margin:0 auto;}
+dt{font-weight:bold; margin:0 auto;}
+dd{margin-left:0; padding-left:1em; margin-bottom:0.5em;}
+#interview dd{border-left:1px solid #ddd; margin-bottom:0;}
+
+figure{margin:0 auto; width:100%; max-width:1000px;}
+figure.wide{margin:0 auto; width:100%; max-width:1600px; margin-top:30px;}
+figure.wide img{position:relative; width:100%; outline:1px solid #aaa; }
+figcaption.wide{margin:0 auto; width:100%; max-width:1600px; margin-bottom:30px; text-indent:0.25em; font-style:italic;}
+
+footer{font-size:25%; width:100%; text-align:center; max-width:1048px; margin:60px auto 100px auto;  padding-top:1em;  border-top:1px solid #bbb; text-shadow:0 1px 0 #fff; line-height:1.2em; }
+
+hr{width:100%; max-width:1048px; margin:3em auto 0em auto; border:none; border-top:1px solid #bbb;}
+
+.clear{clear:both;}
+
+#logo{max-width:375px; max-height:94px; width:100%;}
+#info{width:18px; text-indent:-9999px;}
+
+.right{float:right; border:1px solid #aaa; margin:0 0 1em 1em;}
+.left{float:left; border:1px solid #aaa; margin:0 1em 1em 0;}
+
+#page-changer{display:none;margin:10px 0 0 0;}
+
+/*
+@media all and (max-width: 600px){
+	#navi{display:none;}
+	#page-changer{display:block}
+}*/
+
+@font-face{font-family: BauhausBold; src: url('fonts/BauhausStd-Demi.otf');font-weight:bold;} 
+@font-face{font-family: BauhausMedium; src: url('fonts/BauhausStd-Medium.otf');} 
+
+/*#credits h1,#credits h2,#credits h3,#credits hr{margin:0 auto;padding:0;}
+#credits h1,#credits h2,#credits h3,#credits strong{font-family:BauhausBold, Arial, Helvetica, sans-serif; font-weight:bold;}*/
+/*#credits{text-align:center; background:black; color:white; font-family:BauhausMedium, Arial, Helvetica, sans-serif; text-shadow:none; width:100%; max-width:1000px; margin:0 auto; border-radius:10px; padding:40px 0; margin-top:40px;}*/
+/*#credits{text-align:center; background:black; color:white; font-family:BauhausMedium, Arial, Helvetica, sans-serif; text-shadow:none; width:100%; border-radius:10px; padding:40px 0; margin:40px 0 0 0;}*/
+/*#credits h1{margin-bottom:0em; text-transform:uppercase;}
+#credits hr{margin:1.2em 0; border:none; border-top:2px solid #fff;}
+*/
+
+
+#credits h1,#credits h2,#credits h3,#credits hr{margin:0 auto;padding:0;}
+#credits{text-align:center; width:100%; max-width:1000px; margin:0 auto; border-radius:10px; padding:40px 0; margin-top:40px;}
+#credits h1{margin-bottom:0em; text-transform:uppercase;}
+#credits hr{margin:1.2em 0;}
