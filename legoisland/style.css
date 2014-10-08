@@ -8,10 +8,10 @@ header h1{display:block; width:100%; max-width:1000px; text-align:center; margin
 nav{display:inline-block; width:100%; max-width:1000px; text-align:center;}
 nav ul{list-style-type:none; padding:0; display:inline-block; }
 nav li{display:inline-block;}
-nav li a{display:inline-block; padding:8px 10px; margin:5px 5px; background:rgba(0,0,0,0.05); color:#444; text-shadow:0 1px 0 #eee; text-decoration:none; border:1px solid #ccc; border-radius:5px; box-shadow:0 0 0 #eee; transition:all 0.3s;text-shadow:1px 1px 0px #eee;}
+nav li a{display:inline-block; padding:6px 8px; margin:5px 5px; background:rgba(0,0,0,0.05); color:#444; text-shadow:0 1px 0 #eee; text-decoration:none; border:1px solid #ccc; border-radius:5px; box-shadow:0 0 0 #eee; transition:all 0.3s;text-shadow:1px 1px 0px #eee;}
 nav li a:hover, nav li a:active{border:1px solid #ccc; box-shadow:0 0 12px #9df; }
 
-article{width:100%; max-width:1600px; margin:0 auto;}
+article{width:100%; max-width:1100px; margin:0 auto;}
 article h1,article h2,article h3{display:block; width:100%; max-width:1000px;}
 article h1{margin:1em auto 0.5em; font-size:150%;}
 article h1 span{display:block;font-size:75%;margin-top:0.2em;}
