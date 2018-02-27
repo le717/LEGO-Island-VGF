@@ -1,0 +1,35 @@
+<h1>Installation</h1>
+<h2>Installation on modern Operating Systems</h2>
+<p>Contrary to popular belief, <em>LEGO Island</em> can be played on a number of modern PC's&hellip; the only way to find out really is to test it out for yourself. I've tried it on XP, Windows 7, and Windows 8.1 with very few issues. Some things I've come across are bad click-detection where only one face of a LEGO element becomes clickable when the whole object should be, as well as crashes before the final credits screen.</p>
+
+Important notes about installation:
+<ul>
+<li>If you copy the CD contents to your hard drive, you can skip the No CD Crack below, as the installer will set the CD path to the folder you installed from. Just make sure you have the <em>LEGO Island</em> CD files in a permanent location!</li>
+<li>Make sure to use the default installation path provided! I tried installing the game onto a secondary drive in a custom folder and the game would crash.</li>
+<li>Find the installation directory, and right-click on each of these three files individually: CONFIG.EXE, ISLE.EXE, LEGOIsle.exe. Change the Compatibility mode to Windows XP (Service Pack 2)</li>
+<li>Run CONFIG.EXE, open the Advanced Settings, and choose RGB Emulation</li>
+</ul>
+
+<h2>Play the game wihtout the CD (No CD Crack)</h2>
+<figure><a href="images/no_cd_full.jpg" target="_blank"><img src="images/no_cd.jpg" alt="Whoops! You have to put the CD in your computer!" title="Whoops! You have to put the CD in your computer!" width="232" height="189" class="right"/></a></figure>
+<p>Ok, so it's not exactly &quot;cracking&quot; being done... you just have to change a registry value to make the game think the CD drive is actually a folder in your computer where you've copied the contents of the disk. Follow the steps below at your own risk! <strong>WARNING:</strong> If you've never edited your registry before, be very careful! I will not be held responsible if you cause any problems!</p>
+<ol>
+  <li>Once the game is installed from the disk, check to make sure that the game works on your system.</li>
+  <li> Copy the contents of the CD to anywhere in your computer. For this example, I'm putting them in the same folder as <em>LEGO Island</em> was installed in a subfolder I created called &quot;CD&quot;</li>
+  <li>Open up <strong>regedit.exe</strong>. If you don't know how to do this, open up the Start menu and find <strong>Run...</strong>, choose it, and type in <strong>regedit</strong>.</li>
+  <li>From here,
+    <ol>
+      <li>if you have a 32-bit operating system (or you don't know what you have), try navigating to:<br><code>HKEY_LOCAL_MACHINE &gt; SOFTWARE &gt; Mindscape &gt; <em>LEGO Island</em></code></li>
+      <li>if you have a 64-bit operating system (or you couldn't find the Mindscape folder in the last point), try navigating to:<br><code>HKEY_LOCAL_MACHINE &gt; SOFTWARE &gt; Wow6432Node &gt; Mindscape &gt; LEGO Island</code></li>
+      <li>if you've tried both of the steps above with no luck, try <strong>Edit &gt; Find</strong> or <strong>CTRL+F</strong> in regedit and look for <strong>Mindscape</strong>. Once you find it, open up the <strong>LEGO Island</strong> folder.</li>
+    </ol>
+  </li>
+  <li>With <strong>LEGO Island</strong> selected, you should see a key called <strong>cdpath</strong>. Double-click on it.</li>
+  <li>Now, all you need to do is link up this path to the path where you copied the CD's contents.
+    <ol>
+      <li>If you have a 32-bit operating system and put the CD folder inside your <em>LEGO Island</em> folder, replace the cdpath's value from it's current drive letter to <strong>C:\PROGRA~1\LEGOIS~1\CD</strong></li>
+      <li>If you have a 64-bit operating system and put the CD folder inside your <em>LEGO Island</em> folder, replace the cdpath's value from it's current drive letter to <strong>C:\PROGRA~2\LEGOIS~1\CD</strong></li>
+    </ol>
+  </li>
+  <li> Tada! No more CD needed!</li>
+</ol>
